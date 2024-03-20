@@ -12,7 +12,7 @@ import com.example.demo.repository.EmployeeRepository;
 
 @Service
 public class EmployeeService {
-	private final EmployeeRepository  employeeRepository;
+ EmployeeRepository  employeeRepository;
 
 	public Employee addEmployee (Employee employee) {
 		employee.setEmployeeCode(UUID.randomUUID().toString());
@@ -41,4 +41,4 @@ public class EmployeeService {
 		employeeRepository.deleteById(id);
 	}
 
-	}
+}

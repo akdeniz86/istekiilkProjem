@@ -30,9 +30,8 @@ public class PartController {
 	}	
 	
 	@GetMapping("/all")
-	public ResponseEntity<List<Part>> getAllParts(){		
-		List<Part> parts = partService.findAllParts();
-		return new ResponseEntity<>(parts, HttpStatus.OK);		
+	public List<Part> getAllParts(){
+		return  partService.findAllParts();		
 	}
 	
 	@GetMapping("/all/{id}")
