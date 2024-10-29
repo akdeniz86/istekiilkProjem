@@ -28,6 +28,7 @@ public class EmployeeController {
 		this.employeeService=employeeService;
 	}
 	
+	
 	@GetMapping("/all")
 	public ResponseEntity<List<Employee>> getAllEmployees(){		
 		List<Employee> employees = employeeService.findAllEmployees();
